@@ -2117,6 +2117,7 @@
   (no_connect (at 113.665 109.22) (uuid d987eb41-7889-4671-8b27-8d105d322a61))
   (no_connect (at 88.9 226.695) (uuid dae3a5ad-e115-4482-9ad1-fe2d89f92b12))
   (no_connect (at 62.865 139.7) (uuid df2ee777-fa7a-4df8-95d9-a0c882c15dc1))
+  (no_connect (at 62.865 114.3) (uuid e678c441-7b92-4883-93a5-3fd8458796ba))
   (no_connect (at 88.9 241.935) (uuid e8c3bf35-73a1-49bf-859d-c62193509b5d))
   (no_connect (at 179.07 125.095) (uuid f12ed9e0-245f-4e9a-b063-4a2162230efc))
   (no_connect (at 88.9 257.175) (uuid f14185d2-7e56-4354-b5c5-cc1693f4c5b2))
@@ -2161,10 +2162,6 @@
   (wire (pts (xy 34.925 124.46) (xy 62.865 124.46))
     (stroke (width 0) (type default))
     (uuid 0ba1c3d7-c6c3-439d-9359-09813e6d15ce)
-  )
-  (wire (pts (xy 62.865 114.3) (xy 46.355 114.3))
-    (stroke (width 0) (type default))
-    (uuid 0c97eb62-a665-45a5-9d9a-1d83b4d61fb2)
   )
   (wire (pts (xy 184.15 88.265) (xy 184.15 93.345))
     (stroke (width 0) (type default))
@@ -3356,10 +3353,6 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 129de712-2b67-4cdc-a9a8-f77b978c2e96)
   )
-  (label "BTM_GPIO_R3" (at 46.355 114.3 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 143ff14f-bd8d-4413-b3ba-b9c3223b474f)
-  )
   (label "MB_D-MTS" (at 381.635 52.705 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 14726f79-3e84-4cfa-aa17-df44a6a8a7fc)
@@ -3975,7 +3968,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 158.115 273.685 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 00d89af8-723a-481e-a5f8-2071b8861c4d)
-    (property "Reference" "#FLG03" (at 158.115 271.78 0)
+    (property "Reference" "#FLG02" (at 158.115 271.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 158.115 268.605 0)
@@ -3991,7 +3984,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "#FLG03") (unit 1)
+          (reference "#FLG02") (unit 1)
         )
       )
     )
@@ -4006,7 +3999,7 @@
     (property "Value" "D" (at 324.485 108.585 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 324.485 111.76 0)
+    (property "Footprint" "Diode_SMD:D_1206_3216Metric" (at 324.485 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 324.485 111.76 0)
@@ -4032,13 +4025,13 @@
   (symbol (lib_id "SN74AHCT157PWR:SN74AHCT157PWR") (at 214.63 220.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0233a711-471e-4560-9309-625d6e99df19)
-    (property "Reference" "U103" (at 214.63 195.58 0)
+    (property "Reference" "U6" (at 214.63 195.58 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "SN74AHCT157PWR" (at 214.63 198.12 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "SN74AHCT157PWR:SOP65P640X120-16N" (at 214.63 220.98 0)
+    (property "Footprint" "footprints3rd:SOP65P640X120-16N" (at 214.63 220.98 0)
       (effects (font (size 1.27 1.27)) (justify bottom) hide)
     )
     (property "Datasheet" "" (at 214.63 220.98 0)
@@ -4090,7 +4083,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "U103") (unit 1)
+          (reference "U6") (unit 1)
         )
       )
     )
@@ -4099,13 +4092,13 @@
   (symbol (lib_id "Device:C") (at 72.39 206.375 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 03f93c0b-ad1e-4a51-85b6-fec5618c3ee5)
-    (property "Reference" "C1" (at 66.04 200.025 90)
+    (property "Reference" "C19" (at 66.04 200.025 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10uF/25V(20%)" (at 66.04 202.565 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 76.2 205.4098 0)
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 76.2 205.4098 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 72.39 206.375 0)
@@ -4116,7 +4109,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "C1") (unit 1)
+          (reference "C19") (unit 1)
         )
       )
     )
@@ -4125,13 +4118,13 @@
   (symbol (lib_id "Device:C") (at 58.42 36.83 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 042032d2-c802-476d-a8c4-776068dfa0ae)
-    (property "Reference" "C7" (at 62.23 35.56 0)
+    (property "Reference" "C3" (at 62.23 35.56 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10uF/25V(20%)" (at 53.34 41.91 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 59.3852 40.64 0)
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 59.3852 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 58.42 36.83 0)
@@ -4142,7 +4135,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "C7") (unit 1)
+          (reference "C3") (unit 1)
         )
       )
     )
@@ -4151,13 +4144,13 @@
   (symbol (lib_id "Connector:Conn_01x01_Pin") (at 158.75 229.87 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 07017083-e7b1-4eea-bf67-e6ac5fad8c06)
-    (property "Reference" "J7" (at 159.385 224.79 0)
+    (property "Reference" "J19" (at 159.385 224.79 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Conn_01x01_Pin" (at 159.385 227.33 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 158.75 229.87 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" (at 158.75 229.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 158.75 229.87 0)
@@ -4167,7 +4160,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "J7") (unit 1)
+          (reference "J19") (unit 1)
         )
       )
     )
@@ -4176,13 +4169,13 @@
   (symbol (lib_id "Connector:Conn_01x02_Pin") (at 240.665 88.265 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 07c7b977-9509-4c3a-a630-26a7f996d2a2)
-    (property "Reference" "J10" (at 249.555 80.645 0)
+    (property "Reference" "J9" (at 249.555 80.645 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Conn_01x02_Pin" (at 249.555 83.185 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 240.665 88.265 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" (at 240.665 88.265 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 240.665 88.265 0)
@@ -4193,7 +4186,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "J10") (unit 1)
+          (reference "J9") (unit 1)
         )
       )
     )
@@ -4202,7 +4195,7 @@
   (symbol (lib_id "power:GND") (at 113.665 116.84 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 07eb5566-7c2c-4edb-a1aa-4335d8f6cc13)
-    (property "Reference" "#PWR023" (at 120.015 116.84 0)
+    (property "Reference" "#PWR013" (at 120.015 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 117.475 116.84 90)
@@ -4218,7 +4211,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "#PWR023") (unit 1)
+          (reference "#PWR013") (unit 1)
         )
       )
     )
@@ -4227,13 +4220,13 @@
   (symbol (lib_id "Device:C") (at 29.21 36.83 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 09a505b9-0260-4b1f-9ddf-c95191286bc0)
-    (property "Reference" "C6" (at 33.02 35.56 0)
+    (property "Reference" "C2" (at 33.02 35.56 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.1uF/50V(10%)" (at 24.765 38.735 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 30.1752 40.64 0)
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 30.1752 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 29.21 36.83 0)
@@ -4244,7 +4237,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "C6") (unit 1)
+          (reference "C2") (unit 1)
         )
       )
     )
@@ -4253,7 +4246,7 @@
   (symbol (lib_id "power:GND") (at 44.45 40.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0f7370d5-0ccb-4fc8-9d85-46f0a833f39b)
-    (property "Reference" "#PWR07" (at 44.45 46.99 0)
+    (property "Reference" "#PWR01" (at 44.45 46.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 44.45 45.72 0)
@@ -4269,7 +4262,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "#PWR07") (unit 1)
+          (reference "#PWR01") (unit 1)
         )
       )
     )
@@ -4278,13 +4271,13 @@
   (symbol (lib_id "Device:C") (at 34.925 91.44 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0f87b1c5-c63b-49a0-97c5-2f4d8ad528be)
-    (property "Reference" "C9" (at 37.465 88.9 0)
+    (property "Reference" "C12" (at 37.465 88.9 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "(NC)" (at 37.465 91.44 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 35.8902 95.25 0)
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" (at 35.8902 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 34.925 91.44 0)
@@ -4295,7 +4288,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "C9") (unit 1)
+          (reference "C12") (unit 1)
         )
       )
     )
@@ -4304,13 +4297,13 @@
   (symbol (lib_id "Device:C") (at 43.815 88.9 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 10597d71-18d4-4580-b513-01c623adee5f)
-    (property "Reference" "C10" (at 46.355 86.36 0)
+    (property "Reference" "C9" (at 46.355 86.36 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "(NC)" (at 46.355 88.9 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 44.7802 92.71 0)
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" (at 44.7802 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 43.815 88.9 0)
@@ -4321,7 +4314,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "C10") (unit 1)
+          (reference "C9") (unit 1)
         )
       )
     )
@@ -4330,13 +4323,13 @@
   (symbol (lib_id "Device:C") (at 366.395 226.695 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 15c3dcce-808e-49ec-ac7b-7ac94abb681b)
-    (property "Reference" "C19" (at 370.205 225.425 0)
+    (property "Reference" "C21" (at 370.205 225.425 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "15pF" (at 370.205 227.965 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 367.3602 230.505 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 367.3602 230.505 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 366.395 226.695 0)
@@ -4347,7 +4340,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "C19") (unit 1)
+          (reference "C21") (unit 1)
         )
       )
     )
@@ -4356,13 +4349,13 @@
   (symbol (lib_id "Device:R") (at 95.25 244.475 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 194074e1-e199-40f4-b66b-1e6379bb1e2c)
-    (property "Reference" "R2" (at 95.25 238.125 90)
+    (property "Reference" "R15" (at 95.25 238.125 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10k(NC)" (at 95.25 240.665 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 95.25 242.697 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 95.25 242.697 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 95.25 244.475 0)
@@ -4373,7 +4366,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "R2") (unit 1)
+          (reference "R15") (unit 1)
         )
       )
     )
@@ -4382,13 +4375,13 @@
   (symbol (lib_id "Device:R") (at 269.24 130.175 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1c71540c-be0d-40ac-808d-a095f8ba2c59)
-    (property "Reference" "R106" (at 271.78 128.905 90)
+    (property "Reference" "R5" (at 271.78 128.905 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "500" (at 266.7 130.175 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 269.24 128.397 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 269.24 128.397 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 269.24 130.175 0)
@@ -4399,7 +4392,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "R106") (unit 1)
+          (reference "R5") (unit 1)
         )
       )
     )
@@ -4408,7 +4401,7 @@
   (symbol (lib_id "power:GND") (at 320.04 168.91 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1cadd732-c2ed-4819-be74-bbdc40a61346)
-    (property "Reference" "#PWR029" (at 320.04 175.26 0)
+    (property "Reference" "#PWR021" (at 320.04 175.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 320.04 173.99 0)
@@ -4424,7 +4417,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "#PWR029") (unit 1)
+          (reference "#PWR021") (unit 1)
         )
       )
     )
@@ -4433,7 +4426,7 @@
   (symbol (lib_id "power:GND") (at 383.54 151.13 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 22f7a5d2-6e71-4f34-8dd1-85cbf370b7dc)
-    (property "Reference" "#PWR019" (at 383.54 157.48 0)
+    (property "Reference" "#PWR018" (at 383.54 157.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 383.54 156.21 0)
@@ -4449,7 +4442,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "#PWR019") (unit 1)
+          (reference "#PWR018") (unit 1)
         )
       )
     )
@@ -4458,13 +4451,13 @@
   (symbol (lib_id "Device:C") (at 128.905 106.68 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 23375ef5-7781-4036-9fb7-5c4552c52a8c)
-    (property "Reference" "C18" (at 128.905 100.33 90)
+    (property "Reference" "C15" (at 128.905 100.33 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "2.2uF" (at 128.905 102.87 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 132.715 105.7148 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 132.715 105.7148 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 128.905 106.68 0)
@@ -4475,7 +4468,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "C18") (unit 1)
+          (reference "C15") (unit 1)
         )
       )
     )
@@ -4484,13 +4477,13 @@
   (symbol (lib_id "Connector:Conn_01x01_Pin") (at 158.75 223.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 23af9c17-beee-46d8-9f92-0b8c9b8064dd)
-    (property "Reference" "J1" (at 159.385 218.44 0)
+    (property "Reference" "J17" (at 159.385 218.44 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Conn_01x01_Pin" (at 159.385 220.98 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 158.75 223.52 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" (at 158.75 223.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 158.75 223.52 0)
@@ -4500,7 +4493,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "J1") (unit 1)
+          (reference "J17") (unit 1)
         )
       )
     )
@@ -4509,13 +4502,13 @@
   (symbol (lib_id "Regulator_Linear:LM1117DT-3.3") (at 177.8 35.56 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 28b09f6f-ee8e-4d14-8cbb-067105c677ad)
-    (property "Reference" "U9" (at 177.8 29.21 0)
+    (property "Reference" "U2" (at 177.8 29.21 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "SGM2212-3.3" (at 177.8 31.75 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Package_TO_SOT_SMD:TO-252-3_TabPin2" (at 177.8 35.56 0)
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2" (at 177.8 35.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm1117.pdf" (at 177.8 35.56 0)
@@ -4527,7 +4520,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "U9") (unit 1)
+          (reference "U2") (unit 1)
         )
       )
     )
@@ -4536,7 +4529,7 @@
   (symbol (lib_id "power:GND") (at 68.58 206.375 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 291b6bdb-6dc9-48eb-8794-85983f6085c2)
-    (property "Reference" "#PWR010" (at 68.58 212.725 0)
+    (property "Reference" "#PWR022" (at 68.58 212.725 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 68.58 211.455 0)
@@ -4552,7 +4545,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "#PWR010") (unit 1)
+          (reference "#PWR022") (unit 1)
         )
       )
     )
@@ -4561,7 +4554,7 @@
   (symbol (lib_id "power:GND") (at 31.115 81.28 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 298b952e-9c84-42e2-9015-89b9b7d1c322)
-    (property "Reference" "#PWR08" (at 31.115 87.63 0)
+    (property "Reference" "#PWR06" (at 31.115 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 31.115 86.36 0)
@@ -4577,7 +4570,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR06") (unit 1)
         )
       )
     )
@@ -4586,13 +4579,13 @@
   (symbol (lib_id "Connector:Conn_01x18_Pin") (at 394.335 60.325 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2b0c7dbe-c9f4-4fc8-a235-92115425f28e)
-    (property "Reference" "J5" (at 391.795 84.455 0)
+    (property "Reference" "J7" (at 391.795 84.455 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "Conn_01x18_Pin" (at 386.715 86.995 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (at 394.335 60.325 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x18_P2.54mm_Vertical" (at 394.335 60.325 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 394.335 60.325 0)
@@ -4619,7 +4612,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "J5") (unit 1)
+          (reference "J7") (unit 1)
         )
       )
     )
@@ -4628,7 +4621,7 @@
   (symbol (lib_id "power:GND") (at 104.14 40.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2d3428a2-9fb3-47eb-a546-c6d81d292463)
-    (property "Reference" "#PWR014" (at 104.14 46.99 0)
+    (property "Reference" "#PWR02" (at 104.14 46.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 104.14 45.72 0)
@@ -4644,7 +4637,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "#PWR014") (unit 1)
+          (reference "#PWR02") (unit 1)
         )
       )
     )
@@ -4653,13 +4646,13 @@
   (symbol (lib_id "Connector:Conn_01x05_Pin") (at 173.99 145.415 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2e25b690-3ad2-4206-8bc6-f6884d67f1eb)
-    (property "Reference" "J14" (at 172.72 153.035 0)
+    (property "Reference" "J13" (at 172.72 153.035 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "Conn_01x05_Pin" (at 165.1 155.575 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (at 173.99 145.415 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" (at 173.99 145.415 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 173.99 145.415 0)
@@ -4673,7 +4666,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "J14") (unit 1)
+          (reference "J13") (unit 1)
         )
       )
     )
@@ -4682,13 +4675,13 @@
   (symbol (lib_id "Connector:Conn_01x18_Pin") (at 318.135 60.325 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 39a48290-38a4-40eb-b4f2-5124c89ca39a)
-    (property "Reference" "J3" (at 315.595 83.185 0)
+    (property "Reference" "J4" (at 315.595 83.185 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Conn_01x18_Pin" (at 315.595 85.725 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 318.135 60.325 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x18_P2.54mm_Vertical" (at 318.135 60.325 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 318.135 60.325 0)
@@ -4715,7 +4708,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "J3") (unit 1)
+          (reference "J4") (unit 1)
         )
       )
     )
@@ -4724,13 +4717,13 @@
   (symbol (lib_id "F52R-1A7H1-11018:F52R-1A7H1-11018") (at 283.845 57.785 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3b32ed51-cce3-4ebf-8174-af4c03cfd7d3)
-    (property "Reference" "J6" (at 283.845 84.455 0)
+    (property "Reference" "J3" (at 283.845 84.455 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "F52R-1A7H1-11018" (at 283.845 86.995 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "F52R-1A7H1-11016:AMPHENOL_F52R-1A7H1-11016" (at 283.845 24.765 0)
+    (property "Footprint" "footprints3rd:AMPHENOL_F52R-1A7H1-11018" (at 283.845 24.765 0)
       (effects (font (size 1.27 1.27)) (justify bottom) hide)
     )
     (property "Datasheet" "" (at 283.845 57.785 0)
@@ -4799,7 +4792,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "J6") (unit 1)
+          (reference "J3") (unit 1)
         )
       )
     )
@@ -4808,13 +4801,13 @@
   (symbol (lib_id "Connector:Conn_01x02_Pin") (at 381.635 225.425 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3ff1fbe8-eb37-4c58-b650-6a78ac90a4c7)
-    (property "Reference" "J15" (at 382.905 222.885 0)
+    (property "Reference" "J18" (at 382.905 222.885 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "Conn_01x02_Pin" (at 382.905 225.425 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (at 381.635 225.425 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" (at 381.635 225.425 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 381.635 225.425 0)
@@ -4825,7 +4818,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "J15") (unit 1)
+          (reference "J18") (unit 1)
         )
       )
     )
@@ -4834,13 +4827,13 @@
   (symbol (lib_id "Device:R") (at 58.42 219.075 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 44154032-5877-4e22-9365-fa40c683072a)
-    (property "Reference" "R1" (at 58.42 212.725 90)
+    (property "Reference" "R11" (at 58.42 212.725 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1K" (at 58.42 215.265 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 58.42 220.853 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 58.42 220.853 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 58.42 219.075 0)
@@ -4851,7 +4844,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "R1") (unit 1)
+          (reference "R11") (unit 1)
         )
       )
     )
@@ -4860,13 +4853,13 @@
   (symbol (lib_id "Device:C") (at 204.47 89.535 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 47005241-e241-4727-b426-f73239cdaa9c)
-    (property "Reference" "C5" (at 198.12 90.805 90)
+    (property "Reference" "C11" (at 198.12 90.805 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.1uF/50V(10%)" (at 200.66 97.155 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 205.4352 93.345 0)
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 205.4352 93.345 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 204.47 89.535 0)
@@ -4877,7 +4870,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "C5") (unit 1)
+          (reference "C11") (unit 1)
         )
       )
     )
@@ -4911,7 +4904,7 @@
   (symbol (lib_id "power:GND") (at 319.405 137.16 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4adc5723-5df2-465d-80b5-8b94eda4b268)
-    (property "Reference" "#PWR028" (at 319.405 143.51 0)
+    (property "Reference" "#PWR015" (at 319.405 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 319.405 142.24 0)
@@ -4927,7 +4920,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "#PWR028") (unit 1)
+          (reference "#PWR015") (unit 1)
         )
       )
     )
@@ -4936,13 +4929,13 @@
   (symbol (lib_id "Connector:Conn_01x02_Pin") (at 299.085 215.9 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4e700506-f8c6-4319-90da-ef59ea8b5ac8)
-    (property "Reference" "J17" (at 283.845 207.01 0)
+    (property "Reference" "J16" (at 283.845 207.01 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "Conn_01x02_Pin" (at 283.845 209.55 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (at 299.085 215.9 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" (at 299.085 215.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 299.085 215.9 0)
@@ -4953,7 +4946,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "J17") (unit 1)
+          (reference "J16") (unit 1)
         )
       )
     )
@@ -4962,7 +4955,7 @@
   (symbol (lib_id "power:GND") (at 359.41 166.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 52e949b0-7c6e-49ce-a350-c4c04b15563d)
-    (property "Reference" "#PWR03" (at 359.41 172.72 0)
+    (property "Reference" "#PWR019" (at 359.41 172.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 359.41 171.45 0)
@@ -4978,7 +4971,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "#PWR03") (unit 1)
+          (reference "#PWR019") (unit 1)
         )
       )
     )
@@ -4987,13 +4980,13 @@
   (symbol (lib_id "Device:C") (at 204.47 39.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 58a39324-189d-40f2-a04b-8aaceca0a87e)
-    (property "Reference" "C16" (at 208.28 38.1 0)
+    (property "Reference" "C8" (at 208.28 38.1 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.1uF/50V(10%)" (at 201.295 43.815 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 205.4352 43.18 0)
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 205.4352 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 204.47 39.37 0)
@@ -5004,7 +4997,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "C16") (unit 1)
+          (reference "C8") (unit 1)
         )
       )
     )
@@ -5013,13 +5006,13 @@
   (symbol (lib_id "Device:C") (at 193.04 89.535 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5c5f7774-9f59-4726-b1ef-117cac7c6fbe)
-    (property "Reference" "C4" (at 186.69 90.805 90)
+    (property "Reference" "C10" (at 186.69 90.805 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10uF/25V(20%)" (at 189.23 97.155 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 194.0052 93.345 0)
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 194.0052 93.345 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 193.04 89.535 0)
@@ -5030,7 +5023,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "C4") (unit 1)
+          (reference "C10") (unit 1)
         )
       )
     )
@@ -5039,13 +5032,13 @@
   (symbol (lib_id "Device:R") (at 269.24 140.335 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5ca2272c-03f9-432a-bc87-b7acd932a657)
-    (property "Reference" "R102" (at 271.78 139.065 90)
+    (property "Reference" "R9" (at 271.78 139.065 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "500" (at 266.7 140.335 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 269.24 138.557 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 269.24 138.557 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 269.24 140.335 0)
@@ -5056,7 +5049,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "R102") (unit 1)
+          (reference "R9") (unit 1)
         )
       )
     )
@@ -5065,13 +5058,13 @@
   (symbol (lib_id "Device:C") (at 319.405 133.35 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5cad350d-0dd0-4358-870e-0c9ccab4eb25)
-    (property "Reference" "C21" (at 322.58 132.08 0)
+    (property "Reference" "C16" (at 322.58 132.08 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "C" (at 322.58 134.62 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 320.3702 137.16 0)
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" (at 320.3702 137.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 319.405 133.35 0)
@@ -5082,7 +5075,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "C21") (unit 1)
+          (reference "C16") (unit 1)
         )
       )
     )
@@ -5091,13 +5084,13 @@
   (symbol (lib_id "Device:R") (at 269.24 135.255 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5d6b633f-59c1-49a1-8060-86fdc0adae78)
-    (property "Reference" "R104" (at 271.78 133.985 90)
+    (property "Reference" "R7" (at 271.78 133.985 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "500" (at 266.7 135.255 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 269.24 133.477 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 269.24 133.477 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 269.24 135.255 0)
@@ -5108,7 +5101,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "R104") (unit 1)
+          (reference "R7") (unit 1)
         )
       )
     )
@@ -5117,7 +5110,7 @@
   (symbol (lib_id "power:GND") (at 358.14 134.62 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5d7110e7-c271-4e62-ab92-d4e84db1685c)
-    (property "Reference" "#PWR04" (at 358.14 140.97 0)
+    (property "Reference" "#PWR014" (at 358.14 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 358.14 139.7 0)
@@ -5133,7 +5126,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "#PWR04") (unit 1)
+          (reference "#PWR014") (unit 1)
         )
       )
     )
@@ -5142,13 +5135,13 @@
   (symbol (lib_id "TJA1027T_20_118:TJA1027T_20_118") (at 342.9 129.54 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6294bfdb-dbfc-45fb-bd4b-f3850848c382)
-    (property "Reference" "U101" (at 342.9 114.3 0)
+    (property "Reference" "U3" (at 342.9 114.3 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TJA1027T_20_118" (at 342.9 116.84 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "TJA1027T_20_118:SOIC127P600X175-8N" (at 342.9 129.54 0)
+    (property "Footprint" "footprints3rd:SOIC127P600X175-8N" (at 342.9 129.54 0)
       (effects (font (size 1.27 1.27)) (justify bottom) hide)
     )
     (property "Datasheet" "" (at 342.9 129.54 0)
@@ -5192,7 +5185,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "U101") (unit 1)
+          (reference "U3") (unit 1)
         )
       )
     )
@@ -5201,13 +5194,13 @@
   (symbol (lib_id "Device:R") (at 170.18 127.635 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 66aaf978-1894-4371-a5b3-51118d465b88)
-    (property "Reference" "R6" (at 167.64 128.905 90)
+    (property "Reference" "R3" (at 167.64 128.905 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "500" (at 172.72 127.635 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 170.18 129.413 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 170.18 129.413 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 170.18 127.635 0)
@@ -5218,7 +5211,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "R6") (unit 1)
+          (reference "R3") (unit 1)
         )
       )
     )
@@ -5227,13 +5220,13 @@
   (symbol (lib_id "Device:R") (at 36.83 239.395 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 703daf93-247f-42ed-8f5d-dccac9be5b59)
-    (property "Reference" "R4" (at 39.37 238.125 0)
+    (property "Reference" "R14" (at 39.37 238.125 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "47.5K" (at 39.37 240.665 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 35.052 239.395 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 35.052 239.395 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 36.83 239.395 0)
@@ -5244,7 +5237,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "R4") (unit 1)
+          (reference "R14") (unit 1)
         )
       )
     )
@@ -5253,7 +5246,7 @@
   (symbol (lib_id "power:GND") (at 132.715 106.68 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 706529ca-dcf9-4728-93a6-45c45c0f487b)
-    (property "Reference" "#PWR017" (at 132.715 113.03 0)
+    (property "Reference" "#PWR012" (at 132.715 113.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 132.715 111.76 0)
@@ -5269,7 +5262,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "#PWR017") (unit 1)
+          (reference "#PWR012") (unit 1)
         )
       )
     )
@@ -5278,13 +5271,13 @@
   (symbol (lib_id "Connector:Conn_01x05_Pin") (at 388.62 146.05 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 71594132-9fe7-439d-97ad-31ecbfe3038d)
-    (property "Reference" "J18" (at 390.525 144.78 0)
+    (property "Reference" "J14" (at 390.525 144.78 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "Conn_01x05_Pin" (at 390.525 147.32 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (at 388.62 146.05 0)
+    (property "Footprint" "Connector_JST:JST_XH_B5B-XH-AM_1x05_P2.50mm_Vertical" (at 388.62 146.05 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 388.62 146.05 0)
@@ -5298,7 +5291,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "J18") (unit 1)
+          (reference "J14") (unit 1)
         )
       )
     )
@@ -5307,13 +5300,13 @@
   (symbol (lib_id "Connector:Conn_01x02_Pin") (at 34.925 134.62 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7209ab45-ff37-4a30-9713-6349d45826f1)
-    (property "Reference" "J12" (at 33.655 135.89 90)
+    (property "Reference" "J11" (at 33.655 135.89 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "Conn_01x02_Pin" (at 28.575 138.43 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (at 34.925 134.62 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" (at 34.925 134.62 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 34.925 134.62 0)
@@ -5324,7 +5317,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "J12") (unit 1)
+          (reference "J11") (unit 1)
         )
       )
     )
@@ -5333,13 +5326,13 @@
   (symbol (lib_id "Device:C") (at 53.975 144.78 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 73655304-101a-41cc-bd00-da6772f44829)
-    (property "Reference" "C3" (at 53.975 138.43 90)
+    (property "Reference" "C17" (at 53.975 138.43 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "22UF" (at 53.975 140.97 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 57.785 143.8148 0)
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 57.785 143.8148 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 53.975 144.78 0)
@@ -5350,7 +5343,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "C3") (unit 1)
+          (reference "C17") (unit 1)
         )
       )
     )
@@ -5359,13 +5352,13 @@
   (symbol (lib_id "Connector:Conn_01x02_Pin") (at 302.895 213.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7796ecba-d408-4ca2-a884-ced1b34c2323)
-    (property "Reference" "J19" (at 311.785 205.74 0)
+    (property "Reference" "J15" (at 311.785 205.74 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Conn_01x02_Pin" (at 311.785 208.28 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 302.895 213.36 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" (at 302.895 213.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 302.895 213.36 0)
@@ -5376,7 +5369,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "J19") (unit 1)
+          (reference "J15") (unit 1)
         )
       )
     )
@@ -5385,7 +5378,7 @@
   (symbol (lib_id "power:GND") (at 177.8 43.18 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7a883475-f3ab-4e1b-bdec-b69b59a0951a)
-    (property "Reference" "#PWR016" (at 177.8 49.53 0)
+    (property "Reference" "#PWR04" (at 177.8 49.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 177.8 48.26 0)
@@ -5401,7 +5394,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "#PWR016") (unit 1)
+          (reference "#PWR04") (unit 1)
         )
       )
     )
@@ -5410,13 +5403,13 @@
   (symbol (lib_id "Device:R") (at 184.15 84.455 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 80d1736a-9556-48e6-8bce-8cedebd556e6)
-    (property "Reference" "R18" (at 179.07 88.265 90)
+    (property "Reference" "R1" (at 179.07 88.265 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10K(1%)" (at 181.61 88.265 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 182.372 84.455 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 182.372 84.455 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 184.15 84.455 0)
@@ -5427,7 +5420,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "R18") (unit 1)
+          (reference "R1") (unit 1)
         )
       )
     )
@@ -5436,13 +5429,13 @@
   (symbol (lib_id "10118193-0001LF:10118193-0001LF") (at 247.65 36.83 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 81ad7cbe-4d36-4b54-881d-cf4597a6aec8)
-    (property "Reference" "J8" (at 240.03 22.86 0)
+    (property "Reference" "J2" (at 240.03 22.86 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10118193-0001LF" (at 240.03 25.4 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "10118193-0001LF:AMPHENOL_10118193-0001LF" (at 247.65 36.83 0)
+    (property "Footprint" "footprints3rd:AMPHENOL_10118193-0001LF" (at 247.65 36.83 0)
       (effects (font (size 1.27 1.27)) (justify bottom) hide)
     )
     (property "Datasheet" "" (at 247.65 36.83 0)
@@ -5501,7 +5494,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "J8") (unit 1)
+          (reference "J2") (unit 1)
         )
       )
     )
@@ -5510,7 +5503,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 383.54 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 86910af6-dc83-4543-8249-25d37c2adc15)
-    (property "Reference" "#FLG02" (at 383.54 120.015 0)
+    (property "Reference" "#FLG01" (at 383.54 120.015 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 383.54 116.84 0)
@@ -5526,7 +5519,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "#FLG02") (unit 1)
+          (reference "#FLG01") (unit 1)
         )
       )
     )
@@ -5535,13 +5528,13 @@
   (symbol (lib_id "Device:C") (at 26.035 93.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8f8460d1-ddfb-4065-8abe-68d46f37fcb3)
-    (property "Reference" "C8" (at 28.575 91.44 0)
+    (property "Reference" "C13" (at 28.575 91.44 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "(NC)" (at 28.575 93.98 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 27.0002 97.79 0)
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" (at 27.0002 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 26.035 93.98 0)
@@ -5552,7 +5545,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "C8") (unit 1)
+          (reference "C13") (unit 1)
         )
       )
     )
@@ -5567,7 +5560,7 @@
     (property "Value" "2.2uF" (at 358.775 217.805 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 362.585 221.9198 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 362.585 221.9198 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 358.775 222.885 0)
@@ -5587,7 +5580,7 @@
   (symbol (lib_id "power:GND") (at 231.775 90.805 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 96cbab9b-172e-4741-8e10-10fafad741fd)
-    (property "Reference" "#PWR027" (at 231.775 97.155 0)
+    (property "Reference" "#PWR07" (at 231.775 97.155 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 231.775 95.885 0)
@@ -5603,7 +5596,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "#PWR027") (unit 1)
+          (reference "#PWR07") (unit 1)
         )
       )
     )
@@ -5612,7 +5605,7 @@
   (symbol (lib_id "power:GND") (at 84.455 148.59 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 971f3432-ea60-4988-bdea-95841028ee16)
-    (property "Reference" "#PWR026" (at 84.455 154.94 0)
+    (property "Reference" "#PWR017" (at 84.455 154.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 84.455 153.67 0)
@@ -5628,7 +5621,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "#PWR026") (unit 1)
+          (reference "#PWR017") (unit 1)
         )
       )
     )
@@ -5637,7 +5630,7 @@
   (symbol (lib_id "PCM_Espressif:ESP32-MINI-1") (at 212.09 137.795 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 996f14a8-23a4-4beb-aaf8-1d08a9dddd00)
-    (property "Reference" "U104" (at 214.63 103.505 0)
+    (property "Reference" "U4" (at 214.63 103.505 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "ESP32-MINI-1" (at 214.2841 107.315 0)
@@ -5707,7 +5700,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "U104") (unit 1)
+          (reference "U4") (unit 1)
         )
       )
     )
@@ -5716,7 +5709,7 @@
   (symbol (lib_id "power:GND") (at 76.2 269.875 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9a76fa0b-d10d-4049-8f25-bb57f4095bf8)
-    (property "Reference" "#PWR013" (at 76.2 276.225 0)
+    (property "Reference" "#PWR028" (at 76.2 276.225 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 76.2 274.955 0)
@@ -5732,7 +5725,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "#PWR013") (unit 1)
+          (reference "#PWR028") (unit 1)
         )
       )
     )
@@ -5741,13 +5734,13 @@
   (symbol (lib_id "Device:R") (at 269.24 142.875 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9a8678d7-e107-49c1-98e6-78d234561b9c)
-    (property "Reference" "R101" (at 271.78 141.605 90)
+    (property "Reference" "R10" (at 271.78 141.605 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "500" (at 266.7 142.875 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 269.24 141.097 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 269.24 141.097 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 269.24 142.875 0)
@@ -5758,7 +5751,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "R101") (unit 1)
+          (reference "R10") (unit 1)
         )
       )
     )
@@ -5767,7 +5760,7 @@
   (symbol (lib_id "power:GND") (at 232.41 238.76 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9edfde2d-ecea-4e69-8066-d4ce1b47fa6c)
-    (property "Reference" "#PWR01" (at 232.41 245.11 0)
+    (property "Reference" "#PWR025" (at 232.41 245.11 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 232.41 243.84 0)
@@ -5783,7 +5776,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "#PWR01") (unit 1)
+          (reference "#PWR025") (unit 1)
         )
       )
     )
@@ -5792,13 +5785,13 @@
   (symbol (lib_id "Device:R") (at 269.24 132.715 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9f49f738-df03-4b3b-91e2-c17ccddf92b3)
-    (property "Reference" "R105" (at 271.78 131.445 90)
+    (property "Reference" "R6" (at 271.78 131.445 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "500" (at 266.7 132.715 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 269.24 130.937 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 269.24 130.937 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 269.24 132.715 0)
@@ -5809,7 +5802,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "R105") (unit 1)
+          (reference "R6") (unit 1)
         )
       )
     )
@@ -5818,13 +5811,13 @@
   (symbol (lib_id "Regulator_Linear:LM1117DT-3.3") (at 44.45 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a2d72eae-0a09-4298-9760-a37f9b37c253)
-    (property "Reference" "U7" (at 44.45 26.67 0)
+    (property "Reference" "U1" (at 44.45 26.67 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "SGM2212-3.3" (at 44.45 29.21 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Package_TO_SOT_SMD:TO-252-3_TabPin2" (at 44.45 33.02 0)
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2" (at 44.45 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm1117.pdf" (at 44.45 33.02 0)
@@ -5836,7 +5829,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "U7") (unit 1)
+          (reference "U1") (unit 1)
         )
       )
     )
@@ -5845,7 +5838,7 @@
   (symbol (lib_id "power:GND") (at 100.33 244.475 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a5321903-2492-4984-a7b1-1e867bb9fb52)
-    (property "Reference" "#PWR011" (at 100.33 250.825 0)
+    (property "Reference" "#PWR026" (at 100.33 250.825 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 100.33 249.555 0)
@@ -5861,7 +5854,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "#PWR011") (unit 1)
+          (reference "#PWR026") (unit 1)
         )
       )
     )
@@ -5870,13 +5863,13 @@
   (symbol (lib_id "Device:C") (at 320.04 165.1 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a600536c-a042-477e-9d3b-49e377476546)
-    (property "Reference" "C22" (at 323.215 163.83 0)
+    (property "Reference" "C18" (at 323.215 163.83 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "C" (at 323.215 166.37 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 321.0052 168.91 0)
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" (at 321.0052 168.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 320.04 165.1 0)
@@ -5887,7 +5880,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "C22") (unit 1)
+          (reference "C18") (unit 1)
         )
       )
     )
@@ -5896,13 +5889,13 @@
   (symbol (lib_id "Connector:Conn_01x05_Pin") (at 165.1 145.415 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a736e343-1c1c-4f1f-8149-b9bebcda61e2)
-    (property "Reference" "J13" (at 157.48 155.575 0)
+    (property "Reference" "J12" (at 157.48 155.575 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Conn_01x05_Pin" (at 157.48 153.035 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 165.1 145.415 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" (at 165.1 145.415 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 165.1 145.415 0)
@@ -5916,7 +5909,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "J13") (unit 1)
+          (reference "J12") (unit 1)
         )
       )
     )
@@ -5925,7 +5918,7 @@
   (symbol (lib_id "power:GND") (at 94.615 95.25 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a8b856e4-dfbd-4f8e-903a-69ba16aec69b)
-    (property "Reference" "#PWR024" (at 94.615 88.9 0)
+    (property "Reference" "#PWR08" (at 94.615 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 94.615 90.17 0)
@@ -5941,7 +5934,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "#PWR024") (unit 1)
+          (reference "#PWR08") (unit 1)
         )
       )
     )
@@ -5950,13 +5943,13 @@
   (symbol (lib_id "F52R-1A7H1-11018:F52R-1A7H1-11018") (at 357.505 60.325 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a9960e24-7810-49fc-be74-e44348e4599b)
-    (property "Reference" "J2" (at 357.505 84.455 0)
+    (property "Reference" "J6" (at 357.505 84.455 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "F52R-1A7H1-11018" (at 360.045 86.995 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "F52R-1A7H1-11016:AMPHENOL_F52R-1A7H1-11016" (at 357.505 93.345 0)
+    (property "Footprint" "footprints3rd:AMPHENOL_F52R-1A7H1-11018" (at 357.505 93.345 0)
       (effects (font (size 1.27 1.27)) (justify bottom) hide)
     )
     (property "Datasheet" "" (at 357.505 60.325 0)
@@ -6025,7 +6018,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "J2") (unit 1)
+          (reference "J6") (unit 1)
         )
       )
     )
@@ -6034,13 +6027,13 @@
   (symbol (lib_id "Device:R") (at 30.48 231.775 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ab39ebcb-ca6c-49d0-a224-fa95b363665f)
-    (property "Reference" "R3" (at 30.48 225.425 90)
+    (property "Reference" "R13" (at 30.48 225.425 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "22.1K" (at 30.48 227.965 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 30.48 233.553 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 30.48 233.553 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 30.48 231.775 0)
@@ -6051,7 +6044,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "R3") (unit 1)
+          (reference "R13") (unit 1)
         )
       )
     )
@@ -6066,7 +6059,7 @@
     (property "Value" "15NH" (at 372.745 221.615 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 372.745 222.885 0)
+    (property "Footprint" "Inductor_SMD:L_1206_3216Metric_Pad1.22x1.90mm_HandSolder" (at 372.745 222.885 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 372.745 222.885 0)
@@ -6086,7 +6079,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 196.215 273.685 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b0dc5441-4e80-4a93-8ced-8b429d4e9cd4)
-    (property "Reference" "#FLG04" (at 196.215 271.78 0)
+    (property "Reference" "#FLG03" (at 196.215 271.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 196.215 268.605 0)
@@ -6102,7 +6095,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "#FLG04") (unit 1)
+          (reference "#FLG03") (unit 1)
         )
       )
     )
@@ -6111,7 +6104,7 @@
   (symbol (lib_id "power:GND") (at 376.555 233.045 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b1614c83-5e78-4158-b9ba-91d1f52c2c35)
-    (property "Reference" "#PWR018" (at 376.555 239.395 0)
+    (property "Reference" "#PWR024" (at 376.555 239.395 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 376.555 238.125 0)
@@ -6127,7 +6120,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "#PWR018") (unit 1)
+          (reference "#PWR024") (unit 1)
         )
       )
     )
@@ -6136,7 +6129,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 236.855 273.685 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b3107be9-4cdc-41c5-949b-b1be7a172c55)
-    (property "Reference" "#FLG01" (at 236.855 271.78 0)
+    (property "Reference" "#FLG04" (at 236.855 271.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 236.855 268.605 0)
@@ -6152,7 +6145,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "#FLG01") (unit 1)
+          (reference "#FLG04") (unit 1)
         )
       )
     )
@@ -6161,7 +6154,7 @@
   (symbol (lib_id "power:GND") (at 116.205 95.25 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b51f79e9-e571-4bed-b6c9-d74e073cd5ee)
-    (property "Reference" "#PWR022" (at 116.205 101.6 0)
+    (property "Reference" "#PWR010" (at 116.205 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 116.205 100.33 0)
@@ -6177,7 +6170,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "#PWR022") (unit 1)
+          (reference "#PWR010") (unit 1)
         )
       )
     )
@@ -6186,7 +6179,7 @@
   (symbol (lib_id "power:GND") (at 196.85 231.14 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b995fb21-a158-4ee9-b8a0-d6ab47f35848)
-    (property "Reference" "#PWR02" (at 196.85 237.49 0)
+    (property "Reference" "#PWR023" (at 196.85 237.49 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 196.85 236.22 0)
@@ -6202,7 +6195,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR023") (unit 1)
         )
       )
     )
@@ -6211,13 +6204,13 @@
   (symbol (lib_id "Device:R") (at 366.395 219.075 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid baf54d63-c8e3-40a6-8789-46f25ead4b86)
-    (property "Reference" "R5" (at 361.315 217.805 0)
+    (property "Reference" "R12" (at 361.315 217.805 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "2.2K" (at 360.045 220.345 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 364.617 219.075 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 364.617 219.075 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 366.395 219.075 0)
@@ -6228,7 +6221,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "R5") (unit 1)
+          (reference "R12") (unit 1)
         )
       )
     )
@@ -6237,13 +6230,13 @@
   (symbol (lib_id "Interface_USB:CP2102N-Axx-xQFN20") (at 76.2 241.935 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bb1265ca-4dfa-46f4-9ca5-b01b04bd8de7)
-    (property "Reference" "U5" (at 78.3941 269.875 0)
+    (property "Reference" "U7" (at 78.3941 269.875 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "CP2102N-Axx-xQFN20" (at 78.3941 272.415 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Package_DFN_QFN:SiliconLabs_QFN-20-1EP_3x3mm_P0.5mm" (at 107.95 268.605 0)
+    (property "Footprint" "Package_DFN_QFN:SiliconLabs_QFN-20-1EP_3x3mm_P0.5mm_EP1.8x1.8mm_ThermalVias" (at 107.95 268.605 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf" (at 77.47 260.985 0)
@@ -6273,7 +6266,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "U5") (unit 1)
+          (reference "U7") (unit 1)
         )
       )
     )
@@ -6282,7 +6275,7 @@
   (symbol (lib_name "BTM331-QCC3031_1") (lib_id "BTM331:BTM331-QCC3031") (at 88.265 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c3511adf-b673-4344-9268-9ad8400df6af)
-    (property "Reference" "BTM2" (at 101.8891 95.25 0)
+    (property "Reference" "BTM1" (at 101.8891 95.25 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "~" (at 88.265 95.25 0)
@@ -6351,7 +6344,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "BTM2") (unit 1)
+          (reference "BTM1") (unit 1)
         )
       )
     )
@@ -6360,13 +6353,13 @@
   (symbol (lib_name "U_FL-R-SMT_10__1") (lib_id "dk_Coaxial-Connectors-RF:U_FL-R-SMT_10_") (at 97.155 80.645 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c77526d2-75a0-49b8-a219-4ecdcfcc1f60)
-    (property "Reference" "J20" (at 100.33 79.3749 90)
+    (property "Reference" "J8" (at 100.33 79.3749 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "U_FL-R-SMT_10_" (at 100.33 81.9149 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "digikey-footprints:Coax_Conn_U.FL" (at 102.235 85.725 0)
+    (property "Footprint" "Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical" (at 102.235 85.725 0)
       (effects (font (size 1.524 1.524)) (justify left) hide)
     )
     (property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Hirose%20PDFs/UFL%20Series.pdf" (at 104.775 85.725 0)
@@ -6404,7 +6397,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "J20") (unit 1)
+          (reference "J8") (unit 1)
         )
       )
     )
@@ -6413,7 +6406,7 @@
   (symbol (lib_id "power:GND") (at 193.04 102.235 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cc153769-e74f-4504-a1dc-fc442bdc085c)
-    (property "Reference" "#PWR06" (at 193.04 108.585 0)
+    (property "Reference" "#PWR011" (at 193.04 108.585 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 193.04 107.315 0)
@@ -6429,7 +6422,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR011") (unit 1)
         )
       )
     )
@@ -6438,13 +6431,13 @@
   (symbol (lib_id "10118193-0001LF:10118193-0001LF") (at 121.92 36.83 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d94b9a78-048d-4062-adc1-dd98b7e962ef)
-    (property "Reference" "J9" (at 121.92 24.13 0)
+    (property "Reference" "J1" (at 121.92 24.13 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10118193-0001LF" (at 113.03 21.59 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "10118193-0001LF:AMPHENOL_10118193-0001LF" (at 121.92 36.83 0)
+    (property "Footprint" "footprints3rd:AMPHENOL_10118193-0001LF" (at 121.92 36.83 0)
       (effects (font (size 1.27 1.27)) (justify bottom) hide)
     )
     (property "Datasheet" "" (at 121.92 36.83 0)
@@ -6503,7 +6496,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "J9") (unit 1)
+          (reference "J1") (unit 1)
         )
       )
     )
@@ -6512,13 +6505,13 @@
   (symbol (lib_id "Device:C") (at 71.12 36.83 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d9bc31a5-5fc0-4eec-816e-42900a9a4e16)
-    (property "Reference" "C12" (at 74.93 35.56 0)
+    (property "Reference" "C4" (at 74.93 35.56 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.1uF/50V(10%)" (at 74.93 38.1 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 72.0852 40.64 0)
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 72.0852 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 71.12 36.83 0)
@@ -6529,7 +6522,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "C12") (unit 1)
+          (reference "C4") (unit 1)
         )
       )
     )
@@ -6538,7 +6531,7 @@
   (symbol (lib_id "power:GND") (at 41.91 245.745 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid db8e990b-da41-4c5d-aa33-357cf113ca68)
-    (property "Reference" "#PWR012" (at 41.91 252.095 0)
+    (property "Reference" "#PWR027" (at 41.91 252.095 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 41.91 250.825 0)
@@ -6554,7 +6547,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "#PWR012") (unit 1)
+          (reference "#PWR027") (unit 1)
         )
       )
     )
@@ -6563,13 +6556,13 @@
   (symbol (lib_id "Device:R") (at 269.24 137.795 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid dd6a08e6-808f-4eb3-b66d-129e26226993)
-    (property "Reference" "R103" (at 271.78 136.525 90)
+    (property "Reference" "R8" (at 271.78 136.525 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "500" (at 266.7 137.795 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 269.24 136.017 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 269.24 136.017 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 269.24 137.795 0)
@@ -6580,7 +6573,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "R103") (unit 1)
+          (reference "R8") (unit 1)
         )
       )
     )
@@ -6589,13 +6582,13 @@
   (symbol (lib_id "Device:C") (at 191.77 39.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid dde636b8-642d-486c-94e0-7189570b23a6)
-    (property "Reference" "C15" (at 195.58 38.1 0)
+    (property "Reference" "C7" (at 195.58 38.1 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10uF/25V(20%)" (at 184.15 44.45 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 192.7352 43.18 0)
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 192.7352 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 191.77 39.37 0)
@@ -6606,7 +6599,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "C15") (unit 1)
+          (reference "C7") (unit 1)
         )
       )
     )
@@ -6615,13 +6608,13 @@
   (symbol (lib_id "Device:C") (at 184.15 97.155 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid de391b7f-515c-4ba5-ab85-a38b9958e880)
-    (property "Reference" "C17" (at 177.8 100.965 90)
+    (property "Reference" "C14" (at 177.8 100.965 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1uF/16V(10%)" (at 180.34 108.585 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 185.1152 100.965 0)
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 185.1152 100.965 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 184.15 97.155 0)
@@ -6632,7 +6625,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "C17") (unit 1)
+          (reference "C14") (unit 1)
         )
       )
     )
@@ -6641,13 +6634,13 @@
   (symbol (lib_id "TJA1027T_20_118:TJA1027T_20_118") (at 344.17 161.29 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid df1eb40d-7f59-49d1-8bf5-716eb9ce37a4)
-    (property "Reference" "U102" (at 344.17 146.05 0)
+    (property "Reference" "U5" (at 344.17 146.05 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TJA1027T_20_118" (at 344.17 148.59 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "TJA1027T_20_118:SOIC127P600X175-8N" (at 344.17 161.29 0)
+    (property "Footprint" "footprints3rd:SOIC127P600X175-8N" (at 344.17 161.29 0)
       (effects (font (size 1.27 1.27)) (justify bottom) hide)
     )
     (property "Datasheet" "" (at 344.17 161.29 0)
@@ -6691,7 +6684,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "U102") (unit 1)
+          (reference "U5") (unit 1)
         )
       )
     )
@@ -6700,13 +6693,13 @@
   (symbol (lib_id "Device:R") (at 170.18 130.175 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e0ae005a-3b6f-4180-ba7e-b3a15d7fd619)
-    (property "Reference" "R7" (at 167.64 131.445 90)
+    (property "Reference" "R4" (at 167.64 131.445 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "500" (at 172.72 130.175 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 170.18 131.953 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 170.18 131.953 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 170.18 130.175 0)
@@ -6717,7 +6710,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "R7") (unit 1)
+          (reference "R4") (unit 1)
         )
       )
     )
@@ -6726,13 +6719,13 @@
   (symbol (lib_id "Connector:Conn_01x18_Pin") (at 346.075 60.325 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e0ef6404-6ef8-40f5-aff2-587571204dd1)
-    (property "Reference" "J4" (at 339.725 83.185 0)
+    (property "Reference" "J5" (at 339.725 83.185 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "Conn_01x18_Pin" (at 333.375 85.725 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (at 346.075 60.325 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x18_P2.54mm_Vertical" (at 346.075 60.325 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 346.075 60.325 0)
@@ -6759,7 +6752,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "J4") (unit 1)
+          (reference "J5") (unit 1)
         )
       )
     )
@@ -6768,13 +6761,13 @@
   (symbol (lib_id "Connector:Conn_01x02_Pin") (at 236.855 90.805 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e4d1d1e7-6a8d-4cbb-b3c0-1b2edbff72ce)
-    (property "Reference" "J11" (at 221.615 81.915 0)
+    (property "Reference" "J10" (at 221.615 81.915 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "Conn_01x02_Pin" (at 221.615 84.455 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (at 236.855 90.805 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" (at 236.855 90.805 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 236.855 90.805 0)
@@ -6785,7 +6778,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "J11") (unit 1)
+          (reference "J10") (unit 1)
         )
       )
     )
@@ -6794,7 +6787,7 @@
   (symbol (lib_id "power:GND") (at 92.075 80.645 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e7eaafc9-9fe4-4862-be34-b62f5aca0529)
-    (property "Reference" "#PWR021" (at 85.725 80.645 0)
+    (property "Reference" "#PWR05" (at 85.725 80.645 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 86.995 80.645 0)
@@ -6810,7 +6803,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "#PWR021") (unit 1)
+          (reference "#PWR05") (unit 1)
         )
       )
     )
@@ -6819,7 +6812,7 @@
   (symbol (lib_id "power:GND") (at 57.785 148.59 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ed093b78-a415-4287-9a83-0f5c5d2d09e7)
-    (property "Reference" "#PWR05" (at 57.785 154.94 0)
+    (property "Reference" "#PWR016" (at 57.785 154.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 57.785 153.67 0)
@@ -6835,7 +6828,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "#PWR05") (unit 1)
+          (reference "#PWR016") (unit 1)
         )
       )
     )
@@ -6844,7 +6837,7 @@
   (symbol (lib_id "power:GND") (at 231.14 40.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ed14e856-1ebe-4a5a-967b-867016b03ef5)
-    (property "Reference" "#PWR015" (at 231.14 46.99 0)
+    (property "Reference" "#PWR03" (at 231.14 46.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 231.14 45.72 0)
@@ -6860,7 +6853,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "#PWR015") (unit 1)
+          (reference "#PWR03") (unit 1)
         )
       )
     )
@@ -6869,7 +6862,7 @@
   (symbol (lib_id "power:GND") (at 236.855 273.685 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid edb78777-c9b7-4658-a969-3208b6019243)
-    (property "Reference" "#PWR09" (at 236.855 280.035 0)
+    (property "Reference" "#PWR029" (at 236.855 280.035 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 236.855 278.765 0)
@@ -6885,7 +6878,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "#PWR09") (unit 1)
+          (reference "#PWR029") (unit 1)
         )
       )
     )
@@ -6894,13 +6887,13 @@
   (symbol (lib_id "Device:R") (at 314.96 117.475 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid eea6b30a-53d8-4c1d-8bbc-7157c1179ff9)
-    (property "Reference" "R8" (at 317.5 116.205 0)
+    (property "Reference" "R2" (at 317.5 116.205 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1K" (at 317.5 118.745 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 313.182 117.475 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 313.182 117.475 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 314.96 117.475 0)
@@ -6911,7 +6904,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "R8") (unit 1)
+          (reference "R2") (unit 1)
         )
       )
     )
@@ -6920,13 +6913,13 @@
   (symbol (lib_id "Device:C") (at 162.56 39.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ef7c957f-322f-4e40-ad8e-caf43306e106)
-    (property "Reference" "C14" (at 166.37 38.1 0)
+    (property "Reference" "C6" (at 166.37 38.1 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.1uF/50V(10%)" (at 156.845 41.91 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 163.5252 43.18 0)
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 163.5252 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 162.56 39.37 0)
@@ -6937,7 +6930,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "C14") (unit 1)
+          (reference "C6") (unit 1)
         )
       )
     )
@@ -6946,13 +6939,13 @@
   (symbol (lib_id "Device:C") (at 46.99 239.395 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f18d729e-4bd8-4428-bc32-3aa77d541efd)
-    (property "Reference" "C2" (at 50.8 238.125 0)
+    (property "Reference" "C22" (at 50.8 238.125 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1uF/16V" (at 50.8 240.665 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 47.9552 243.205 0)
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 47.9552 243.205 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 46.99 239.395 0)
@@ -6963,7 +6956,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "C2") (unit 1)
+          (reference "C22") (unit 1)
         )
       )
     )
@@ -6972,7 +6965,7 @@
   (symbol (lib_id "power:GND") (at 99.695 95.25 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f4b1948c-d6ae-41ba-904e-4c58e893659e)
-    (property "Reference" "#PWR025" (at 99.695 88.9 0)
+    (property "Reference" "#PWR09" (at 99.695 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 99.695 90.17 0)
@@ -6988,7 +6981,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "#PWR025") (unit 1)
+          (reference "#PWR09") (unit 1)
         )
       )
     )
@@ -6997,13 +6990,13 @@
   (symbol (lib_id "Device:C") (at 151.13 39.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f5c1db19-a73b-4967-af03-340232145685)
-    (property "Reference" "C13" (at 154.94 38.1 0)
+    (property "Reference" "C5" (at 154.94 38.1 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10uF/25V(20%)" (at 144.78 45.085 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 152.0952 43.18 0)
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 152.0952 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 151.13 39.37 0)
@@ -7014,7 +7007,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "C13") (unit 1)
+          (reference "C5") (unit 1)
         )
       )
     )
@@ -7023,13 +7016,13 @@
   (symbol (lib_id "Device:C") (at 17.78 36.83 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fa5f2a4e-6fd2-42c3-87f5-1d518af31af2)
-    (property "Reference" "C11" (at 21.59 35.56 0)
+    (property "Reference" "C1" (at 21.59 35.56 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10uF/25V(20%)" (at 12.7 43.18 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 18.7452 40.64 0)
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 18.7452 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 17.78 36.83 0)
@@ -7040,7 +7033,7 @@
     (instances
       (project "VOLVOAUXBT"
         (path "/73b2c855-f630-4f24-9f86-2f91dbaf924b"
-          (reference "C11") (unit 1)
+          (reference "C1") (unit 1)
         )
       )
     )
