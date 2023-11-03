@@ -1,0 +1,30 @@
+Designator,Footprint,Quantity,Value,LCSC Part #,where,done
+BTM1,BTM331,1,~,,alie,yes
+"C1, C24, C3, C5, C7",1206,5,10uF/25V(20%),,jlc,yes
+"C10, C11",1206,2,0.1uF/25V(20%),,jlc,yes
+"C12, C13, C9",1206,3,(NC),,nc,
+C20,805,1,2.2uF,,jlc,yes
+C16,1206,1,1nF,,jlc,yes
+C17,1206,1,22UF,,jlc ,yes
+C18,1206,1,220pF,,lcsc,no
+"C2, C25, C4, C6, C8",1206,5,0.1uF/50V(10%),,jlc,yes
+C21,603,1,15pF,,jlc,yes
+C23,1206,1,1uF/16V(10%),,jlc,yes
+D1,1206,1,D,,lcsc,no
+"J1, J2",AMPHENOL_10118193-0001LF,2,10118193-0001LF,,lcsc,no
+"J10, J11, J12, J16, J18, J9",PinHeader_1x02_P2.54mm_Vertical,6,Conn_01x02_Pin,,alie,yes
+J14,JST_XH_B5B-XH-AM_1x05_P2.50mm_Vertical,1,Conn_01x05_Pin,,alie,yes
+"J3, J6",AMPHENOL_F52R-1A7H1-11018,2,F52R-1A7H1-11018,,lcsc,no
+"J4, J5, J7",PinHeader_1x18_P2.54mm_Vertical,3,Conn_01x18_Pin,,alie,yes
+J8,U.FL_Hirose_U.FL-R-SMT-1_Vertical,1,U_FL-R-SMT_10_,U.FL-R-SMT(10),lcsc,yes
+L1,1206,1,15NH,,lcsc,no
+"R1, R17, R18, R20, R21, R23, R3, R4",603,8,500,,jlc,yes
+R12,603,1,2.2K,,jlc,yes
+R16,603,1,10K(1%),,jlc,yes
+R2,603,1,1K,,jlc,yes
+"U1, U2",SOT-223-3_TabPin2,2,SGM2212-3.3,,lcsc,no
+"U3, U5",SOIC127P600X175-8N,2,TJA1027T_20_118,,lcsc,no
+U4,SOP-8_3.9x4.9mm_P1.27mm,1,CH340N,,lcsc,no
+U6,SOP65P640X120-16N,1,SN74AHCT157PWR,,lcsc,no
+U8,ESP32-WROOM-32E,1,ESP32-WROOM-E,,lcsc,yes
+C15,805,1,2.2uF,,lcsc,no
